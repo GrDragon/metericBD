@@ -1,0 +1,8 @@
+#下面是忽略的文件夹
+node_modules/
+filejs/
+img/
+other/
+dll/
+#下面是忽略的文件
+javescript/encryption.js

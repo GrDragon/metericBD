@@ -1,0 +1,33 @@
+{
+  "main": "index.html",
+  "nodejs": true,
+  "window": {
+    "title": "Test",
+    "icon" :"./img/mainPic.png",
+    "toolbar": true,
+    "show_in_taskbar": true,
+    "resizable": true,
+    "position" :"center",
+    "frame": true,
+    "fullscreen":false
+  },
+  "webkit": {
+    "plugin": true
+  },
+  "name": "agentserve",
+  "version": "0.0.1",
+  "private": true,
+  "description": "null",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "async": "^1.4.2",
+    "edge": "^0.10.1",
+    "jquery": "^2.1.4",
+    "later": "^1.1.9",
+    "moment": "^2.10.6",
+    "mongodb": "^2.0.4",
+    "monk": "^1.0.1"
+  }
+}

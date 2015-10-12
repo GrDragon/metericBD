@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>新建作业</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<link rel="stylesheet" href="../css/newTask.css">
+	<script type="text/javascript" src="../javescript/jquery.js"></script>
+	<script type="text/javascript" src ="../javescript/newTask.js"> </script>
+</head>
+<body>
+	<form id="myForm">
+		<div>
+			<strong>作业名称：</strong>
+			<input id="taskName" type="text" value = ""></input>
+		</div>
+		<div>
+			<strong>计划类型：</strong>
+       		<select id="taskType">
+       			<option selected>选择计划类型</option>
+       			<option value="onceRun" id="onceRun">执行一次</option>
+       			<option value="repeatRun" id="repeatRun">重复执行</option>
+	            <option value="autoRun" id="autoRun" >代理启动时自动启动</option>
+	            <option value="freeRun" id="freeRun">CPU空闲时启动</option>
+        	</select>
+		</div>
+			<div class="onceRun" hidden>
+				<p><strong>请选择开始执行时间：</strong></p>
+				<input id="onceRun_date" type="date" ></input>
+				<input id="onceRun_time" type="time" ></input>
+			</div>
+		
+		<div class="repeatRun" hidden>
+			<div class="period">
+				<strong>请选择执行周期：</strong>
+				<select id="period">
+					<option value="1">每天</option>
+					<option value="7">每周</option>
+					<option value="30">每月</option>
+				</select>
+			</div>
+			
+			<div class="frequency">
+				<strong>请选择执行频率：</strong>
+  				<select id="frequency">
+  					<option selected></option>
+					<option value="time_1">执行一次</option>
+					<option value="time_2">执行多次</option>
+				</select>
+			</div>
+
+			<div class="time_1" hidden>
+				<strong>请选择开始执行时间：</strong>
+				<input type="date" id="time_1_startDate"></input>
+				<input type="time" id="time_1_startTime"></input>
+			</div>
+			<div class="time_2" hidden>
+				<strong>开始时间：</strong>
+				<input type="date" id="time_2_startDate"></input>
+				<input type="time" id="time_2_startTime"></input>
+				<strong>执行次数</strong>
+				<input type="text" id="time_2_times"></input>
+			</div>
+		</div>
+		
+		<strong>作业内容选择</strong>
+  				<select id="taskContent">
+					<option selected>选择作业内容</option>
+  					<option value="hjwd">环境温度</option>
+  					<option value="syje">剩余金额 </option>
+					<option value="rqxq">日期星期</option>
+					<option value="sj">时间</option>
+				</select>
+		<br><br/>
+		<strong>作业说明</strong>
+		<textarea id="taskExplain" readonly="true"></textarea>
+		<input id ="enSure" type="button" value="确定"></input>
+		<input id="cancel" type="reset" value = "取消"></input>
+	</form>
+</body>
+</html>
