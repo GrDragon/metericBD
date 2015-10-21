@@ -2,7 +2,7 @@
   "main": "index.html",
   "nodejs": true,
   "window": {
-    "title": "Test",
+    "title": "北电仪表代理服务",
     "icon" :"./img/mainPic.png",
     "toolbar": true,
     "show_in_taskbar": true,
