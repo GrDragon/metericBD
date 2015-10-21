@@ -2,12 +2,27 @@ body {
 	background-color :none;
 }
 
-
-.form ul li input{
-	font-size: 14px;
+.td{
+	border-right:1px solid #ADADAD;
 }
 
-.form ul li{
+.tab{
+	border-bottom:1px solid #ADADAD;
+}
+
+.form input{
+	font-size:100%;
+	margin:5px;
+	padding:5px;
+}
+
+.form {
 	margin:0px;
 	padding:5px;
+	list-style-type:none;
+}
+
+.botton{
+	width: 80%;
+	height: 20%;
 }
