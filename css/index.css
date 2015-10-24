@@ -10,6 +10,10 @@ body {
 	border-bottom:1px solid #ADADAD;
 }
 
+.tab1 td{
+	border: 1px solid #ADADAD;
+	text-align: center;
+}
 .form input{
 	font-size:100%;
 	margin:5px;
