@@ -2,7 +2,7 @@ $(function(){
 
 //打开新建任务
 $('#newTaskOn').click(function(){
-	window.open('./html/newTask.html',"newTask");
+	window.open('.html/newTask.html',"newTask");
 	});
 
 	
@@ -74,13 +74,22 @@ $('#newTaskOn').click(function(){
     sub2.append(sub2_2);
     sub2_2.on('click', function() {
     console.log('Item is clicked');
-    window.open('./html/newTask.html',"newTask");
+    window.open('html/newTask.html',"newTask");
 	});
 
     sub3.append(sub3_1);
+    sub3_1.on('click', function() {
+    window.location.href='html/allTask.html';
+    });
     sub3.append(sub3_2);
+    sub3_2.on('click', function() {
+    window.location.href='html/runTask.html';
+    });
     sub3.append(sub3_3);
     sub3.append(sub3_4);
+    sub3_4.on('click', function() {
+    window.location.href='html/noTask.html';
+    });
     sub3.append(sub3_5);
     sub3.append(sub3_6);
     sub3.append(sub3_7);
