@@ -2,3 +2,31 @@ body {
 	background-color :none;
 }
 
+.td{
+	border-right:1px solid #ADADAD;
+}
+
+.tab{
+	border-bottom:1px solid #ADADAD;
+}
+
+.tab1 td{
+	border: 1px solid #ADADAD;
+	text-align: center;
+}
+.form input{
+	font-size:100%;
+	margin:5px;
+	padding:5px;
+}
+
+.form {
+	margin:0px;
+	padding:5px;
+	list-style-type:none;
+}
+
+.botton{
+	width: 60%;
+	height: 20%;
+}
